@@ -1,0 +1,9 @@
+{
+    "id": "line-multi-selector",
+    "name": "line-multi-selector",
+    "version": "0.1.4",
+    "minAppVersion": "0.15.0",
+    "description": "Implement multi-line selection via line-number regions.",
+    "author": "ibaru",
+    "isDesktopOnly": false
+}
