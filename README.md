@@ -8,7 +8,7 @@
 
 ## Manual Installation
 1. Download main.js and manifest.json from the latest release page.
-2. Copy both files into /.obsidian/plugins/line-multi-select/ under your vault directory.
+2. Copy both files into `/.obsidian/plugins/line-multi-selector/` under your vault directory.
 3. Reload Obsidian and enable this plugin under Settings > Community Plugins.
 
 # Features
