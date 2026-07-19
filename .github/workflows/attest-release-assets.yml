@@ -1,0 +1,52 @@
+name: Attest Release Assets
+
+on:
+  release:
+    types:
+      - published
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Tag to attest, for example 0.1.4
+        required: true
+        type: string
+
+jobs:
+  attest:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      attestations: write
+      id-token: write
+
+    steps:
+      - name: Resolve tag ref
+        id: ref
+        shell: bash
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "ref=refs/tags/${{ inputs.tag }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "ref=refs/tags/${{ github.event.release.tag_name }}" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Check out tagged source
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ steps.ref.outputs.ref }}
+
+      - name: Verify release assets exist
+        shell: bash
+        run: |
+          test -f main.js
+          test -f manifest.json
+
+      - name: Attest main.js provenance
+        uses: actions/attest@v4
+        with:
+          subject-path: ${{ github.workspace }}/main.js
+
+      - name: Attest manifest.json provenance
+        uses: actions/attest@v4
+        with:
+          subject-path: ${{ github.workspace }}/manifest.json

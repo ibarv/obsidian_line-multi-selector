@@ -1,10 +1,11 @@
-# Introduction
-- Realize multi-line selection via gutter interactions — contiguous multi-selection, non-contiguous multi-selection, append selection, toggle selection status, and remember selection status.
+# line-multi-selector
+
+Select entire lines from the editor gutter with contiguous and non-contiguous multi-line selection.
 
 # Installation
 
 ## From Obsidian Community Plugins
-- Coming soon.
+- After the plugin is approved, open Settings > Community plugins, search for `line-multi-selector`, then install and enable it.
 
 ## Manual Installation
 1. Download main.js and manifest.json from the latest release page.
