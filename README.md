@@ -1,22 +1,20 @@
-[📖 中文文档](https://github.com/ibarv/obsidian_line-multi-selector/blob/main/.doc/README-zn.md)
-
 # Introduction
 
 - Realize multi-line selection via gutter interactions — contiguous multi-selection, non-contiguous multi-selection, append selection, toggle selection status, and remember selection status.
 
-# Installation
+## Installation
 
-## Install via Obsidian Community Plugins
+### Install via Obsidian Community Plugins
 
 - Open the plugin marketplace, search for "line-multi-selector", and click Install.
 
-## Manual Installation
+### Manual Installation
 
 1. Download main.js and manifest.json from the latest release page.
 2. Copy both files into the `/.obsidian/plugins/line-multi-select/` folder under your vault directory.
 3. Reload Obsidian and enable this plugin under Settings > Community Plugins.
 
-# Features
+## Features
 
 1. Click any line number to select the entire line.
 2. Ctrl / Cmd + Click: Toggle selection status to add or remove a single line from the current selection range.
@@ -24,7 +22,7 @@
 4. Hold left mouse button and drag: Quickly select a block of contiguous lines.
 5. When appending selections via Method 2, new selections will be added to the remembered selection set.
 
-# Usage
+## Usage
 
 - Note: Line number display must be enabled (Settings - Editor - Line numbers) for the plugin to work.
 
@@ -34,8 +32,52 @@
 |2. Ctrl / Cmd + Click|Toggle selection status to add or remove a single line from the current selection range|
 |3. Shift + Click|Select contiguous content between two lines|
 |4. Hold left mouse button and drag|Quickly select a block of contiguous lines|
+
 - When appending selections via Method 2, new selections will be added to the remembered selection set.
 
-# Compatibility
+## Compatibility
 
 - Requires Obsidian version 0.15.0 or later.
+
+---
+
+# 介绍
+
+- 通过侧边行号交互实现多行选中功能 —— 连续多选、非连续多选、追加选中、切换选中状态，且可记忆选中状态。
+
+## 安装
+
+### 通过 Obsidian 社区插件安装
+
+- 打开插件市场，搜索"line-multi-selector"，点击安装即可。
+
+### 手动安装
+
+1. 从最新发布页面下载 main.js 与 manifest.json 文件。
+2. 将两个文件复制至你的库目录下的 /.obsidian/plugins/line-multi-select/ 文件夹内。
+3. 重新加载 Obsidian，在 设置 > 社区插件 中启用本插件。
+
+## 功能
+
+1. 点击任意行号即可选中整行。
+2. Ctrl / Cmd + 点击：切换单行选中状态，向当前选中区域添加或移除单行。
+3. Shift + 点击：选中两行之间的连续内容。
+4. 按住鼠标左键拖动：快速选中一整块连续行。
+5. 使用第 2 种方式追加选中时，新选中内容会添加至已记忆的选中集合中。
+
+## 使用方法
+
+- 注意：必须打开行号显示（设置-编辑器-行号），插件才可使用。
+
+| 操作                 | 效果                      |
+| ------------------ | ----------------------- |
+| 1. 点击任意行号          | 选中整行                    |
+| 2. Ctrl / Cmd + 点击 | 切换单行选中状态，向当前选中区域添加或移除单行 |
+| 3. Shift + 点击      | 选中两行之间的连续内容             |
+| 4. 按住鼠标左键拖动        | 快速选中一整块连续行              |
+
+- 使用第 2 种方式追加选中时，新选中内容会添加至已记忆的选中集合中。
+
+## 兼容性
+
+- 要求 Obsidian 版本 0.15.0 及以上。
