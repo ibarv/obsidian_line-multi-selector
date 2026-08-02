@@ -1,3 +1,5 @@
+[English](#introduction) | [中文](#介绍)
+
 # Introduction
 
 - Realize multi-line selection via gutter interactions — contiguous multi-selection, non-contiguous multi-selection, append selection, toggle selection status, and remember selection status.
