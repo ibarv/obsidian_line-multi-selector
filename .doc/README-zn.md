@@ -1,4 +1,4 @@
-[📖 English](../README.md)
+[📖 English](https://github.com/ibarv/obsidian_line-multi-selector/blob/main/README.md)
 
 # 介绍
 

@@ -1,4 +1,4 @@
-[📖 中文文档](./.doc/README-zn.md)
+[📖 中文文档](https://github.com/ibarv/obsidian_line-multi-selector/blob/main/.doc/README-zn.md)
 
 # Introduction
 
