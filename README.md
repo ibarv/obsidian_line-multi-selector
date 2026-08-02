@@ -1,3 +1,5 @@
+[📖 中文文档](./.doc/README-zn.md)
+
 # Introduction
 
 - Realize multi-line selection via gutter interactions — contiguous multi-selection, non-contiguous multi-selection, append selection, toggle selection status, and remember selection status.
